@@ -41,6 +41,9 @@
 			/* Main header */
 			#header {
 				border-bottom-color: #A70E16 !important;
+				border-top: none !important;
+				padding: 0 0 1em 0 !important;
+				margin-bottom: 2em !important;
 			}
 			#header h1 {
 				font-family: 'Futura', 'Trebuchet MS', Arial, sans-serif !important;
@@ -51,6 +54,16 @@
 			/* Project area sections */
 			.project-area {
 				margin-bottom: 3em !important;
+				padding: 2em 0 0 0 !important;
+				border: none !important;
+				border-top: none !important;
+			}
+			.project-area:first-of-type {
+				border-top: none !important;
+				padding-top: 0 !important;
+			}
+			.project-area:after {
+				display: none !important;
 			}
 			.project-area h2 {
 				font-family: 'Futura', 'Trebuchet MS', Arial, sans-serif !important;
@@ -90,7 +103,7 @@
 
 							<!-- Header -->
 								<header id="header">
-									<h1>Key Areas (You Must Build Things!)</h1>
+									<h1 style="margin-bottom: 0;">Key Areas<br><span style="font-size: 0.5em; font-weight: normal;">(You Must Decorate Things!)</span></h1>
 								</header>
 
 							<!-- Project Area 1 -->

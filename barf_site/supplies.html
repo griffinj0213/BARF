@@ -1,0 +1,359 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Supplies - BARF</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			body, p, a, li, h2, h3, h4, h5, h6, input, button, .button {
+				font-family: 'Futura', 'Trebuchet MS', Arial, sans-serif !important;
+				color: #444444 !important;
+			}
+			/* Change icon color to red */
+			.icon:before {
+				color: #A70E16 !important;
+			}
+			.content p {
+				font-size: 150% !important;
+			}
+			#menu li a {
+				font-size: 150% !important;
+			}
+			/* Hide sidebar toggle on desktop */
+			@media screen and (min-width: 981px) {
+				#sidebar .toggle {
+					display: none !important;
+				}
+			}
+			/* Reduce padding between main and sidebar */
+			#main {
+				padding-right: 1em !important;
+			}
+			#sidebar {
+				padding-left: 1em !important;
+			}
+			/* Main header */
+			#header {
+				border-bottom-color: #A70E16 !important;
+				border-top: none !important;
+				padding: 0 0 1em 0 !important;
+				margin-bottom: 2em !important;
+			}
+			#header h1 {
+				font-family: 'Futura', 'Trebuchet MS', Arial, sans-serif !important;
+				font-size: 3em !important;
+				font-weight: normal !important;
+				text-transform: uppercase !important;
+			}
+			/* Accordion styles */
+			.accordion-section {
+				margin-bottom: 0 !important;
+				padding: 0 !important;
+				border: none !important;
+				border-top: none !important;
+				border-bottom: none !important;
+			}
+			.accordion-section:after {
+				display: none !important;
+			}
+			.accordion-section:first-of-type {
+				border-top: none !important;
+			}
+			.accordion-header {
+				font-family: 'Futura', 'Trebuchet MS', Arial, sans-serif !important;
+				font-weight: normal !important;
+				text-transform: uppercase !important;
+				font-size: 2em !important;
+				margin: 0 !important;
+				padding: 0.75em 1em !important;
+				background-color: #f5f5f5 !important;
+				cursor: pointer !important;
+				border: none !important;
+				border-bottom: 2px solid #A70E16 !important;
+				display: flex !important;
+				justify-content: space-between !important;
+				align-items: center !important;
+				transition: background-color 0.2s ease !important;
+			}
+			.accordion-header:hover {
+				background-color: #eeeeee !important;
+			}
+			.accordion-header.active {
+				background-color: #A70E16 !important;
+				color: #ffffff !important;
+			}
+			.accordion-header.active * {
+				color: #ffffff !important;
+			}
+			.accordion-icon {
+				font-size: 0.7em !important;
+				transition: transform 0.3s ease !important;
+			}
+			.accordion-header.active .accordion-icon {
+				transform: rotate(180deg) !important;
+			}
+			.accordion-content {
+				display: none !important;
+				padding: 1.5em 1em !important;
+				background-color: #fafafa !important;
+			}
+			.accordion-content.active {
+				display: block !important;
+			}
+			.supply-location {
+				margin-bottom: 1em !important;
+				padding-bottom: 0 !important;
+				display: flex !important;
+				gap: 1.5em !important;
+				align-items: flex-start !important;
+			}
+			.supply-location:last-child {
+				margin-bottom: 0 !important;
+			}
+			.supply-location-content {
+				flex: 1 !important;
+			}
+			.supply-location-map {
+				flex-shrink: 0 !important;
+				width: 250px !important;
+				height: 200px !important;
+			}
+			.supply-location-map iframe {
+				width: 100% !important;
+				height: 100% !important;
+				border: 1px solid #dddddd !important;
+				border-radius: 4px !important;
+			}
+			.supply-location h3 {
+				font-family: 'Futura', 'Trebuchet MS', Arial, sans-serif !important;
+				font-weight: bold !important;
+				font-size: 1.5em !important;
+				margin: 0 0 0.5em 0 !important;
+				color: #A70E16 !important;
+			}
+			.supply-location p {
+				font-size: 1.1em !important;
+				line-height: 1.6 !important;
+				margin: 0.5em 0 !important;
+			}
+			.supply-location .address {
+				font-style: italic !important;
+				color: #666666 !important;
+			}
+			@media screen and (max-width: 980px) {
+				.supply-location {
+					flex-direction: column !important;
+				}
+				.supply-location-map {
+					width: 100% !important;
+				}
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<h1>Supplies</h1>
+								</header>
+
+							<!-- Introduction -->
+								<section style="margin-bottom: 1em; padding: 0;">
+									<p style="font-size: 1.2em; line-height: 1.6;">Ask around before you buy. People may be willing to loan or give you things. Check the recycling area in the GCC basement. Certain places on campus, especially Commons, will regularly have lots of cardboard they may let you use. The Health Center regularly has lots of styrofoam.</p>
+									<p style="font-size: 1.2em; line-height: 1.6;">What you're looking for may already exist in Renn Fayre storage. There's a lot of crap in there. Check the <a href="https://docs.google.com/spreadsheets/d/1LiSy4iehjs6Mz65UN9v0OU1BKuWbxa6LoH6PNqFxCSQ/edit?usp=sharing">storage spreadsheet</a> or email the czars if you're looking for something.</p>
+								</section>
+
+							<!-- Building Materials Section -->
+								<section class="accordion-section">
+									<h2 class="accordion-header">
+										<span>Building Materials</span>
+										<span class="accordion-icon">▼</span>
+									</h2>
+									<div class="accordion-content">
+										<p style="margin-bottom: 1.5em; font-size: 1.1em;">Obviously Home Depot and Lowes are places you could go, but if you want to shop local and pay less for wood, check out these secondhand stores. They focus on home renovation stuff, so there are lots of doors and windows, but a lot of cool other stuff too. Worth going even if you aren't buying things!</p>
+										<div class="supply-location">
+											<div class="supply-location-content">
+												<h3>Reclaim NW</h3>
+												<p>This is a really great junk/hardware store. If you're looking for wood and don't need it to be pristine, go here. They have 2x4s and plywood at probably 50-60% of what Home Depot would charge. There is also just a lot of cool salvaged junk that might spark your creativity.</p>
+												<p class="address">7639 SE Foster Rd. Portland, Or. 97202</p>
+												<p><a href="https://www.reclaimnw.com/" target="_blank">https://www.reclaimnw.com/</a></p>
+											</div>
+											<div class="supply-location-map">
+												<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.243776342922!2d-122.58690518815452!3d45.48503553192758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a03d64612afd%3A0x75794a55cd4fe43!2s7639%20SE%20Foster%20Rd%2C%20Portland%2C%20OR%2097206!5e0!3m2!1sen!2sus!4v1768765612397!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>											</div>
+										</div>
+										<div class="supply-location">
+											<div class="supply-location-content">
+												<h3>Rebuilding Center</h3>
+												<p>Similar to Reclaim, but a smaller selection (still a huge place though). They also have wood and it tends to be in a little bit nicer shape than Reclaim.</p>
+												<p class="address">3625 N Mississippi Ave, Portland, OR 97227</p>
+												<p><a href="https://www.rebuildingcenter.org/" target="_blank">https://www.rebuildingcenter.org/</a></p>
+											</div>
+											<div class="supply-location-map">
+												<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.091292325458!2d-122.67843988815123!3d45.54848902769016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a74204ed0833%3A0xa6ac60d960034366!2s3625%20N%20Mississippi%20Ave%2C%20Portland%2C%20OR%2097227!5e0!3m2!1sen!2sus!4v1768765649862!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>											</div>
+										</div>
+									</div>
+								</section>
+
+							<!-- Fabric Section -->
+								<section class="accordion-section">
+									<h2 class="accordion-header">
+										<span>Fabric</span>
+										<span class="accordion-icon">▼</span>
+									</h2>
+									<div class="accordion-content">
+										<p style="margin-bottom: 1.5em; font-size: 1.1em;">Michaels is of course an option, but if you want to shop local, try these.</p>
+										<div class="supply-location">
+											<div class="supply-location-content">
+												<h3>Fabrics for Less</h3>
+												<p>A much wider, and sometimes weirder, selection of fabrics than most stores. Price is about on par with others.</p>
+												<p class="address">12115 SE Powell Blvd, Portland, OR 97266</p>
+											</div>
+											<div class="supply-location-map">
+												<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.6330227249523!2d-122.54092008815394!3d45.49733423110669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a1db435057ff%3A0x1f3f990cfc9e1394!2s12115%20SE%20Powell%20Blvd%2C%20Portland%2C%20OR%2097266!5e0!3m2!1sen!2sus!4v1768766362984!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+											</div>
+										</div>
+										<div class="supply-location">
+											<div class="supply-location-content">
+												<h3>Reed College Swap Shop</h3>
+												<p>The best place to go for fabrics. </p>
+												<p class="address">GCC Basement</p>
+											</div>
+											<div class="supply-location-map">
+												<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.4197624094713!2d-122.63507148815474!3d45.481491232164196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950a99cac91881%3A0xa7c4bdf1bfadc42e!2sGray%20Campus%20Center%2C%20Reed%20College!5e0!3m2!1sen!2sus!4v1768766541460!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+											</div>
+										</div>
+									</div>
+								</section>
+
+							<!-- Junk Section -->
+								<section class="accordion-section">
+									<h2 class="accordion-header">
+										<span>Craft Supplies & Junk</span>
+										<span class="accordion-icon">▼</span>
+									</h2>
+									<div class="accordion-content">
+										<p style="margin-bottom: 1.5em; font-size: 1.1em;"> </p>
+										<div class="supply-location">
+											<div class="supply-location-content">
+												<h3>The Bins</h3>
+												<p>All time favorite. It's where things from Goodwill go to die, so it's got everything. Very cheap because you buy by the pound. Many garbage treasures to be found.</p>
+												<p class="address">1740 SE Ochoco St, Milwaukie, OR 97222</p>
+											</div>
+											<div class="supply-location-map">
+												<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44777.70844023039!2d-122.6937183249877!3d45.45757951582604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950ad3b6261347%3A0xc0b2f5abe621c6ba!2sGoodwill%20Industries%20of%20the%20Columbia%20Willamette!5e0!3m2!1sen!2sus!4v1768766714238!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+											</div>
+										</div>
+										<div class="supply-location">
+											<div class="supply-location-content">
+												<h3>SCRAP</h3>
+												<p>Great store focused on used and miscellaneous crafting materials. Very cheap and their inventory changes all the time.</p>
+												<p class="address">1736 SW Alder St, Portland, OR 97205</p>
+												<p><a href="https://portland.scrapcreativereuse.org/" target="_blank">https://portland.scrapcreativereuse.org/</a></p>
+											</div>
+											<div class="supply-location-map">
+												<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22364.66041803454!2d-122.69694239906025!3d45.51848140879923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a747edc8fec5%3A0x7246180e702bc47a!2sSCRAP%20PDX!5e0!3m2!1sen!2sus!4v1768766818452!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+											</div>
+										</div>
+										<div class="supply-location">
+											<div class="supply-location-content">
+												<h3>Reclaim It</h3>
+												<p>A vintage and secondhand crafts store. Cheap and always different stuff.</p>
+												<p class="address">1 N Killingsworth St, Portland, OR 97217</p>
+												<p><a href="https://www.reclaimitpdx.org/" target="_blank">https://www.reclaimitpdx.org/</a></p>
+											</div>
+											<div class="supply-location-map">
+												<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.377117536902!2d-122.66979498815061!3d45.56285442673024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a70ffa8b34e5%3A0x3137c4d8b6e50899!2s1%20N%20Killingsworth%20St%2C%20Portland%2C%20OR%2097217!5e0!3m2!1sen!2sus!4v1768766989670!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+											</div>
+										</div>
+									</div>
+								</section>
+
+							<!-- Tools Section -->
+								<section class="accordion-section">
+									<h2 class="accordion-header">
+										<span>Tools</span>
+										<span class="accordion-icon">▼</span>
+									</h2>
+									<div class="accordion-content">
+										<p style="margin-bottom: 1.5em; font-size: 1.1em;">Ask on the BARF discord, there are a lot of people who will let you borrow things. The czars may or may not have a communal drill you can use.</p>
+										<div class="supply-location">
+											<div class="supply-location-content">
+												<h3>South East Portland Tool Library (SEPTL)</h3>
+												<p>A really amazing place, a library for tools! Tools of all kinds, from circular saws to shovels. You must have membership, but it's free (suggested $10) and very easy to sign up for when you're there. Only SE residents can rent, but at or near Reed, you're good. Late fees are crazy low, like $1 every two weeks. You can check tool availability online. Their hours are pretty limited.</p>
+												<p class="address">1137 SE 20th Ave Portland, OR 97214</p>
+												<p><a href="https://sites.google.com/septl.org/website/" target="_blank">https://sites.google.com/septl.org/website/</a></p>
+											</div>
+											<div class="supply-location-map">
+												<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.777680640596!2d-122.64890768815312!3d45.514553829956945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a098f0928bb3%3A0xde97d4e318fb6246!2s1137%20SE%2020th%20Ave%2C%20Portland%2C%20OR%2097214!5e0!3m2!1sen!2sus!4v1768767672383!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+											</div>
+										</div>
+									</div>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Owl Image -->
+								<div style="text-align: center; margin-bottom: 2em;">
+									<img src="images/owl.png" alt="Owl" style="max-width: 90%; height: auto;" />
+								</div>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<ul>
+										<li><a href="index.html">Home</a></li>
+										<li><a href="index.html#gallery">Pictures</a></li>
+										<li><a href="key-project-areas.html">Key Areas & Past Projects</a></li>
+										<li><a href="project-form.html">Project Form</a></li>
+										<li><a href="supplies.html">Supplies</a></li>
+										<li><a href="how-to.html">How To</a></li>
+									</ul>
+								</nav>
+
+							<!-- Footer -->
+								<footer id="footer">
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				// Accordion functionality
+				$(document).ready(function() {
+					$('.accordion-header').click(function() {
+						// Toggle active class on header
+						$(this).toggleClass('active');
+
+						// Toggle the content
+						$(this).next('.accordion-content').toggleClass('active');
+					});
+				});
+			</script>
+
+	</body>
+</html>
