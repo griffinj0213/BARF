@@ -17,7 +17,7 @@
 			}
 			/* Change icon color to red */
 			.icon:before {
-				color: #A70E16 !important;
+				color: #17A2B8 !important;
 			}
 			.content p {
 				font-size: 150% !important;
@@ -37,10 +37,11 @@
 			}
 			#sidebar {
 				padding-left: 1em !important;
+				background-color: #FDF6E3 !important;
 			}
 			/* Main header */
 			#header {
-				border-bottom-color: #A70E16 !important;
+				border-bottom-color: #5B9AA9 !important;
 				border-top: none !important;
 				padding: 0 0 1em 0 !important;
 				margin-bottom: 2em !important;
@@ -54,7 +55,7 @@
 			/* FAQ styles */
 			.faq-item {
 				margin-bottom: 0.5em !important;
-				border-bottom: 1px solid #e0e0e0 !important;
+				border-bottom: 1px solid #5B9AA9 !important;
 			}
 			.faq-question {
 				font-family: 'Futura', 'Trebuchet MS', Arial, sans-serif !important;
@@ -68,10 +69,10 @@
 				color: #444444 !important;
 			}
 			.faq-question:hover {
-				color: #A70E16 !important;
+				color: #F05A28 !important;
 			}
 			.faq-question.active {
-				color: #A70E16 !important;
+				color: #17A2B8 !important;
 			}
 			.faq-question:after {
 				content: '+' !important;
@@ -81,8 +82,11 @@
 				transform: translateY(-50%) !important;
 				font-size: 1.5em !important;
 				font-weight: normal !important;
-				transition: transform 0.3s ease !important;
-				color: #A70E16 !important;
+				transition: color 0.3s ease, transform 0.3s ease !important;
+				color: #17A2B8 !important;
+			}
+			.faq-question:hover:after {
+				color: #F05A28 !important;
 			}
 			.faq-question.active:after {
 				content: '−' !important;
@@ -120,7 +124,7 @@
 
 							<!-- Introduction -->
 								<section style="margin-bottom: 2em; padding: 0;">
-									<p style="font-size: 1.2em; line-height: 1.6;">You must submit a project application. Here's the link to the czar's <a href="https://docs.google.com/forms/d/1hLuEjV3OgAqOGmUIA429OR9pDn9TOO6BEL5bDqaSa60/viewform?edit_requested=true">application form</a>. </p>
+									<p style="font-size: 2em; line-height: 1.6;">You must submit a project application. <br>Here's the link to the czar's <a href="https://docs.google.com/forms/d/1hLuEjV3OgAqOGmUIA429OR9pDn9TOO6BEL5bDqaSa60/viewform?edit_requested=true">application form</a>. </p>
 								</section>
 
 							<!-- FAQ Section -->
@@ -158,21 +162,21 @@
 									<div class="faq-item">
 										<div class="faq-question">How can I pass the safety requirements?</div>
 										<div class="faq-answer">
-											<p>Some of the rules may seem esoteric or stringent. There are a lot of liability issues that make things you would think would be okay not okay. Also, the grass is precious and fragile. Don't dig any holes. If you're worried your project won't pass the initial screening, I suggest <a href="#">posting to the Discord</a> to ask about how to build in safety features. The committee isn't inherently strident—we can have a trebuchet—there are just a lot of small things to consider.</p>
+											<p>Some of the rules may seem esoteric or stringent. There are a lot of liability issues that make things you would think would be okay not okay. Also, the grass is precious and fragile. Don't dig any holes. If you're worried your project won't pass the initial screening, I suggest <a href="https://discord.gg/KWpXydXUt8">posting to the Discord</a> to ask about how to build in safety features. The committee isn't inherently strident—we can have a trebuchet—there are just a lot of small things to consider.</p>
 										</div>
 									</div>
 
 									<div class="faq-item">
 										<div class="faq-question">Where do I get materials?</div>
 										<div class="faq-answer">
-											<p>Look <a href="supplies.html">here</a> or <a href="#">post to the Discord</a>. Apply for money even if your project is small. Especially if it is small; you'll probably get all your funding.</p>
+											<p>Look <a href="supplies.html">here</a> or <a href="https://discord.gg/KWpXydXUt8">post to the Discord</a>. Apply for money even if your project is small. Especially if it is small; you'll probably get all your funding.</p>
 										</div>
 									</div>
 
 									<div class="faq-item">
 										<div class="faq-question">I need help making it.</div>
 										<div class="faq-answer">
-											<p><a href="#">To the Discord!</a> Or come to one of the Saturday BARFs in the SU.</p>
+											<p><a href="https://discord.gg/KWpXydXUt8">To the Discord!</a> Or come to one of the Saturday BARFs in the SU.</p>
 										</div>
 									</div>
 
@@ -187,18 +191,20 @@
 
 							<!-- Owl Image -->
 								<div style="text-align: center; margin-bottom: 2em;">
-									<img src="images/owl.png" alt="Owl" style="max-width: 90%; height: auto;" />
+									<img src="images/owl.png" alt="Owl" style="max-width: 90%; height: auto; border: 2px solid #17A2B8;" />
 								</div>
 
 							<!-- Menu -->
 								<nav id="menu">
 									<ul>
 										<li><a href="index.html">Home</a></li>
+										<li><a href="index.html#get-involved">Get Involved</a></li>
 										<li><a href="index.html#gallery">Pictures</a></li>
-										<li><a href="key-project-areas.html">Key Areas & Past Projects</a></li>
-										<li><a href="project-form.html">Project Form</a></li>
+										<li><a href="key-project-areas.html">Key Areas & Recurring Projects</a></li>
+										<li><a href="project-form.html">Project Form & FAQ</a></li>
 										<li><a href="supplies.html">Supplies</a></li>
 										<li><a href="how-to.html">How To</a></li>
+										<li><a href="index.html#about">About</a></li>
 									</ul>
 								</nav>
 

@@ -15,9 +15,13 @@
 				font-family: 'Futura', 'Trebuchet MS', Arial, sans-serif !important;
 				color: #444444 !important;
 			}
-			/* Change icon color to red */
+			/* Change icon color to Zissou blue */
 			.icon:before {
-				color: #A70E16 !important;
+				color: #17A2B8 !important;
+				transition: color 0.3s ease !important;
+			}
+			.icon:hover:before {
+				color: #F05A28 !important;
 			}
 			.content p {
 				font-size: 150% !important;
@@ -37,6 +41,7 @@
 			}
 			#sidebar {
 				padding-left: 1em !important;
+				background-color: #FDF6E3 !important;
 			}
 			/* Make gallery images uniform height */
 			.posts article .image img {
@@ -84,19 +89,12 @@
 			#gallery .major:after {
 				display: none !important;
 			}
-			/* Style get connected header */
-			#get-connected {
-				padding-top: 1em !important;
-				padding-bottom: 1em !important;
-			}
-			#get-connected .major {
+			/* Style about header */
+			#about .major {
 				text-align: center;
 				margin-bottom: 0.5em !important;
 			}
-			#get-connected .features {
-				margin-bottom: 0 !important;
-			}
-			#get-connected .major h2 {
+			#about .major h2 {
 				text-align: center;
 				border-bottom: none !important;
 				font-family: 'Futura', 'Trebuchet MS', Arial, sans-serif !important;
@@ -105,11 +103,35 @@
 				font-size: 2em !important;
 				margin: 0 !important;
 			}
-			#get-connected .major:after {
+			#about .major:after {
 				display: none !important;
 			}
-			/* Make Get Connected icons smaller and remove boxes */
-			#get-connected .icon {
+			/* Style get involved header */
+			#get-involved {
+				padding-top: 1em !important;
+				padding-bottom: 1em !important;
+			}
+			#get-involved .major {
+				text-align: center;
+				margin-bottom: 0.5em !important;
+			}
+			#get-involved .features {
+				margin-bottom: 0 !important;
+			}
+			#get-involved .major h2 {
+				text-align: center;
+				border-bottom: none !important;
+				font-family: 'Futura', 'Trebuchet MS', Arial, sans-serif !important;
+				font-weight: normal !important;
+				text-transform: uppercase !important;
+				font-size: 2em !important;
+				margin: 0 !important;
+			}
+			#get-involved .major:after {
+				display: none !important;
+			}
+			/* Make Get involved icons smaller and remove boxes */
+			#get-involved .icon {
 				font-size: 1em !important;
 				border: none !important;
 				margin: 0 0 0.5em 0 !important;
@@ -117,28 +139,28 @@
 				width: auto !important;
 				line-height: 1 !important;
 			}
-			#get-connected .icon:after {
+			#get-involved .icon:after {
 				display: none !important;
 			}
-			#get-connected .icon:before {
+			#get-involved .icon:before {
 				font-size: 2em !important;
 			}
-			#get-connected article {
+			#get-involved article {
 				border: none !important;
 				margin: 0 !important;
 				flex-direction: column !important;
 				align-items: center !important;
 				text-align: center !important;
 			}
-			#get-connected .content {
+			#get-involved .content {
 				margin-top: 0 !important;
 				padding-top: 0 !important;
 			}
-			#get-connected h3 {
+			#get-involved h3 {
 				font-size: 1em !important;
 				margin: 0.25em 0 !important;
 			}
-			#get-connected p {
+			#get-involved p {
 				font-size: 0.8em !important;
 				margin: 0 !important;
 			}
@@ -176,14 +198,14 @@
 									</div>
 									<p style="font-family: 'Futura', 'Trebuchet MS', Arial, sans-serif; font-size: 3em; margin: 0 0 1em 0; line-height: 1.3; font-weight: normal; text-transform: uppercase; color: #000 !important;">Build Art for Renn Fayre</p>
 									<div class="content" style="width: 100%; margin-bottom: 2em;">
-										<p style="margin-bottom: 0;">Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+										<p style="margin-bottom: 0;">Renn Fayre doesn't just happen, you have to build it. This site will hopefully give you some ideas of what and how you can make Renn Fayre projects. Renn Fayre is a the-more-the-better situation, so everyone should try their hand at making some art! You don't have to be good at it, you just have to do it.</p>
 									</div>
 								</section>
 
 							<!-- Section -->
-								<section id="get-connected" style="padding-top: 0 !important;">
+								<section id="get-involved" style="padding-top: 3em !important;">
 									<header class="major">
-										<h2>Get Connected</h2>
+										<h2>Get Involved</h2>
 									</header>
 									<div class="features" style="display: flex; justify-content: space-between; gap: 1em; padding-bottom: 2em;">
 										<article style="flex: 1; max-width: 33%;">
@@ -194,22 +216,22 @@
 											</div>
 										</article>
 										<article style="flex: 1; max-width: 33%;">
-											<span class="icon brands fa-discord"></span>
+											<a href="https://discord.gg/KWpXydXUt8" target="_blank"><span class="icon brands fa-discord"></span></a>
 											<div class="content">
-												<h3>Join the Discord</h3>
-												<p>Connect with the community.</p>
+												<h3><a href="https://discord.gg/KWpXydXUt8" target="_blank">Join the Discord</a></h3>
+												<p>Quickest way to connect.</p>
 											</div>
 										</article>
 										<article style="flex: 1; max-width: 33%;">
 											<span class="icon brands fa-instagram"></span>
 											<div class="content">
 												<h3>Join the Instagram</h3>
-												<p>Follow for updates.</p>
+												<p>Ugh, y'all made me use Meta.</p>
 											</div>
 										</article>
 									</div>
 									<div class="content" style="width: 100%; margin-bottom: 2em; margin-top: 3em;">
-										<p style="margin-bottom: 0; font-size: 150% !important;">Add your text here to describe how to get involved with BARF and participate in Renn Fayre projects.</p>
+										<p style="margin-bottom: 0; font-size: 150% !important;">During the weeks before Renn Fayre, BARF will hold building sessions on Saturdays. You can borrow tools, use supplies, and meet people. There might be pizza. <br><br>Specific times for these will be posted closer to Renn Fayre. Get on the email list for updates.</p>
 									</div>
 								</section>
 
@@ -290,9 +312,6 @@
 										</article>
 										<article>
 											<a href="images/gallery/ScreenShot2024-01-05at12.21.39PM.png" class="image"><img src="images/gallery/ScreenShot2024-01-05at12.21.39PM.png" alt="" /></a>
-										</article>
-										<article>
-											<a href="images/gallery/chvnk.jpeg" class="image"><img src="images/gallery/chvnk.jpeg" alt="" /></a>
 										</article>
 										<article>
 											<a href="images/gallery/dscn0582.jpeg" class="image"><img src="images/gallery/dscn0582.jpeg" alt="" /></a>
@@ -399,6 +418,31 @@
 										<article>
 											<a href="images/gallery/thessis3.jpg" class="image"><img src="images/gallery/thessis3.jpg" alt="" /></a>
 										</article>
+									<article>
+										<a href="images/gallery/IMG_5928.JPG" class="image"><img src="images/gallery/IMG_5928.JPG" alt="" /></a>
+									</article>
+									<article>
+										<a href="images/gallery/IMG_5933.JPG" class="image"><img src="images/gallery/IMG_5933.JPG" alt="" /></a>
+									</article>
+									<article>
+										<a href="images/gallery/IMG_7233.JPG" class="image"><img src="images/gallery/IMG_7233.JPG" alt="" /></a>
+									</article>
+									<article>
+										<a href="images/gallery/IMG_7251.JPG" class="image"><img src="images/gallery/IMG_7251.JPG" alt="" /></a>
+									</article>
+									<article>
+										<a href="images/gallery/bridge.jpeg" class="image"><img src="images/gallery/bridge.jpeg" alt="" /></a>
+									</article>
+									</div>
+								</section>
+
+							<!-- Section -->
+								<section id="about" style="padding-top: 3em !important;">
+									<header class="major">
+										<h2>About</h2>
+									</header>
+									<div class="content">
+										<p style="font-size: 1.2em; line-height: 1.6;">This is the about section. Add your content here.</p>
 									</div>
 								</section>
 
@@ -409,21 +453,22 @@
 					<div id="sidebar">
 						<div class="inner">
 
-							<!-- Owl Image -->
 								<div style="text-align: center; margin-bottom: 2em;">
-									<img src="images/owl.png" alt="Owl" style="max-width: 90%; height: auto;" />
+									<img src="images/owl.png" alt="Owl" style="max-width: 90%; height: auto; border: 2px solid #17A2B8;" />
 								</div>
 
+										<li><a href="#about">About</a></li>
 							<!-- Menu -->
 								<nav id="menu">
 									<ul>
 										<li><a href="index.html">Home</a></li>
-										<li><a href="#get-connected">Get Involved</a></li>
+										<li><a href="#get-involved">Get Involved</a></li>
 										<li><a href="#gallery">Pictures</a></li>
 										<li><a href="key-project-areas.html">Key Areas & Recurring Projects</a></li>
-										<li><a href="project-form.html">Project Form</a></li>
+										<li><a href="project-form.html">Project Form & FAQ</a></li>
 										<li><a href="supplies.html">Supplies</a></li>
 										<li><a href="how-to.html">How To</a></li>
+										<li><a href="#about">About</a></li>
 									</ul>
 								</nav>
 
