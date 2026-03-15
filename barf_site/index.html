@@ -185,21 +185,33 @@
 				background-color: #F05A28 !important;
 				color: #ffffff !important;
 				text-align: center !important;
-				padding: 1em 2em !important;
+				padding: 2em 2em !important;
+				margin-top: 2em !important;
 				margin-bottom: 2em !important;
 				border-radius: 4px !important;
+				transition: background-color 0.3s ease !important;
+				cursor: pointer !important;
+			}
+			.alert-banner:hover {
+				background-color: #17A2B8 !important;
 			}
 			.alert-banner a {
 				color: #ffffff !important;
-				text-decoration: underline !important;
+				text-decoration: none !important;
 				font-weight: bold !important;
-			}
-			.alert-banner a:hover {
-				color: #FDF6E3 !important;
+				display: block !important;
+				border-bottom: 2px solid #ffffff !important;
 			}
 			.alert-banner p {
-				font-size: 1.5em !important;
+				font-size: 300% !important;
+				margin: 0 0 0.3em 0 !important;
+				color: #ffffff !important;
+			}
+			.alert-banner .subtitle {
+				font-size: 200% !important;
 				margin: 0 !important;
+				font-weight: normal !important;
+				color: #ffffff !important;
 			}
 		</style>
 	</head>
@@ -214,7 +226,10 @@
 
 							<!-- Alert Banner -->
 								<div class="alert-banner">
-									<p><a href="https://docs.google.com/forms/d/1aYtXUGK1N97XLMCNIZ3gKgzCkwW3pVR8m3sqVvtkT7I/edit?ts=69b2102a" target="_blank">Submit your projects by the 19th!</a></p>
+									<a href="https://docs.google.com/forms/d/1aYtXUGK1N97XLMCNIZ3gKgzCkwW3pVR8m3sqVvtkT7I/edit?ts=69b2102a" target="_blank">
+										<p>SUBMIT YOUR PROJECT BY THE 19th!</p>
+										<p class="subtitle">complete the form here</p>
+									</a>
 								</div>
 
 							<!-- Banner -->
