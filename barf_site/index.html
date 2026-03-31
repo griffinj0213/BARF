@@ -16,9 +16,9 @@
 				font-family: 'Futura', 'Trebuchet MS', Arial, sans-serif !important;
 				color: #444444 !important;
 			}
-			/* Change icon color to Zissou blue */
+			/* Change icon color to yellow */
 			.icon:before {
-				color: #17A2B8 !important;
+				color: #F5C518 !important;
 				transition: color 0.3s ease !important;
 			}
 			.icon:hover:before {
@@ -180,37 +180,42 @@
 					width: calc(100% - 0.5em) !important;
 				}
 			}
+			/* Google Drive button */
+			.gdrive-btn {
+				background-color: #17A2B8 !important;
+				color: #ffffff !important;
+				padding: 0.4em 1em;
+				border-radius: 4px;
+				text-decoration: none !important;
+				font-size: 1.1em;
+				border-bottom: none !important;
+				display: inline-block;
+				transition: background-color 0.3s ease;
+			}
+			.gdrive-btn:hover {
+				background-color: #F5C518 !important;
+				color: #ffffff !important;
+			}
 			/* Alert banner */
 			.alert-banner {
 				background-color: #F05A28 !important;
 				color: #ffffff !important;
 				text-align: center !important;
-				padding: 2em 2em !important;
+				padding: 1.5em 2em !important;
 				margin-top: 2em !important;
 				margin-bottom: 2em !important;
 				border-radius: 4px !important;
+				display: block !important;
+				text-decoration: none !important;
+				border-bottom: none !important;
 				transition: background-color 0.3s ease !important;
-				cursor: pointer !important;
 			}
 			.alert-banner:hover {
-				background-color: #17A2B8 !important;
-			}
-			.alert-banner a {
-				color: #ffffff !important;
-				text-decoration: none !important;
-				font-weight: bold !important;
-				display: block !important;
-				border-bottom: 2px solid #ffffff !important;
+				background-color: #F5C518 !important;
 			}
 			.alert-banner p {
-				font-size: 300% !important;
-				margin: 0 0 0.3em 0 !important;
-				color: #ffffff !important;
-			}
-			.alert-banner .subtitle {
-				font-size: 200% !important;
+				font-size: 150% !important;
 				margin: 0 !important;
-				font-weight: normal !important;
 				color: #ffffff !important;
 			}
 		</style>
@@ -225,12 +230,10 @@
 						<div class="inner">
 
 							<!-- Alert Banner -->
-								<div class="alert-banner">
-									<a href="https://docs.google.com/forms/d/1aYtXUGK1N97XLMCNIZ3gKgzCkwW3pVR8m3sqVvtkT7I/edit?ts=69b2102a" target="_blank">
-										<p>SUBMIT YOUR PROJECT BY THE 19th!</p>
-										<p class="subtitle">complete the form here</p>
-									</a>
-								</div>
+								<a href="#get-involved" class="alert-banner">
+									<p><strong style="color: #ffffff !important;">BARF has started building on Saturdays!</strong></p>
+									<p>Join us in the SU from 12-3 for tools, supplies, and help.</p>
+								</a>
 
 							<!-- Banner -->
 								<section id="banner" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding-top: 0 !important; padding-bottom: 1em !important;">
@@ -272,7 +275,16 @@
 											</div>
 										</article>
 									</div>
-									<div class="content" style="width: 100%; margin-bottom: 2em; margin-top: 3em;">
+									<div style="background-color: #17A2B8; padding: 1.5em 4em; margin: 1.5em 3em; border-radius: 4px; display: flex; align-items: center;">
+										<div style="flex: 1; text-align: center; padding-right: 2em;">
+											<p style="font-weight: bold; font-size: 185% !important; margin: 0 !important; color: #ffffff !important; line-height: 1.8 !important;">Build Days have started.<br>In the SU,<br>from about 12-3.</p>
+										</div>
+										<div style="width: 2px; background-color: #ffffff; align-self: stretch; margin: 0.5em 0;"></div>
+										<div style="flex: 1; text-align: center; padding-left: 2em;">
+											<p style="margin: 0 !important; font-size: 220% !important; font-weight: bold; line-height: 1.8 !important; color: #ffffff !important;">4/4<br>4/11<br>4/18<br>4/25</p>
+										</div>
+									</div>
+									<div class="content" style="width: 100%; margin-bottom: 2em; margin-top: 3em; padding-top: 2.5em;">
 										<p style="margin-bottom: 0; font-size: 150% !important;">During the weeks before Renn Fayre, BARF will hold building sessions on Saturdays. You can borrow tools, use supplies, and meet people. There might be pizza. <br><br>Specific times for these will be posted closer to Renn Fayre. Get on the email list for updates.</p>
 									</div>
 								</section>
@@ -282,6 +294,7 @@
 									<header class="major">
 										<h2>Renn Fayres Past</h2>
 									</header>
+									<p style="text-align: center; margin-bottom: 1.5em;"><a href="https://drive.google.com/drive/u/0/folders/1TW4JtCGPZTc4TNzza7D2aoYCysZ6XzPJ" target="_blank" class="gdrive-btn">View more pictures and add your pictures on the Google Drive.</a></p>
 									<div class="posts">
 										<article>
 											<a href="images/gallery/01_assaulta.jpeg" class="image"><img src="images/gallery/01_assaulta.jpeg" alt="" /></a>
@@ -483,7 +496,7 @@
 										<h2>About</h2>
 									</header>
 									<div class="content">
-										<p style="font-size: 1.2em; line-height: 1.6;">Josie started BARF in 2024 because she likes making art from garbage.</p>
+										<p style="font-size: 1.2em; line-height: 1.6;">Josie started BARF in 2024 because she likes making art from garbage. Maybe she will add more here later.</p>
 									</div>
 								</section>
 
@@ -504,7 +517,7 @@
 										<li><a href="index.html">Home</a></li>
 										<li><a href="#get-involved">Get Involved</a></li>
 										<li><a href="#gallery">Pictures</a></li>
-										<li><a href="key-project-areas.html">Key Areas & Recurring Projects</a></li>
+										<li><a href="key-project-areas.html">Key Areas &<br>Recurring Projects</a></li>
 										<li><a href="project-form.html">Project Form & FAQ</a></li>
 										<li><a href="supplies.html">Supplies</a></li>
 										<li><a href="how-to.html">How To</a></li>
